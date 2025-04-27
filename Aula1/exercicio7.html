@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Formulário de Cadastro</h2>
+
+<form>
+    <div>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required>
+    </div>
+
+    <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" required>
+    </div>
+
+    <div>
+        <label for="dataNascimento">Data de Nascimento:</label><br>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+    </div>
+
+    <div>
+        <label for="profissao">Profissão:</label><br>
+        <input type="text" id="profissao" name="profissao" required>
+    </div>
+
+    <fieldset>
+        <legend><strong>Endereço:</strong></legend>
+
+        <div>
+            <label for="rua">Rua:</label><br>
+            <input type="text" id="rua" name="rua" required>
+        </div>
+
+        <div>
+            <label for="numero">Número:</label><br>
+            <input type="text" id="numero" name="numero" required>
+        </div>
+
+        <div>
+            <label for="bairro">Bairro:</label><br>
+            <input type="text" id="bairro" name="bairro" required>
+        </div>
+
+        <div>
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade" required>
+        </div>
+
+        <div>
+            <label for="estado">Estado:</label><br>
+            <input type="text" id="estado" name="estado" required>
+        </div>
+
+        <div>
+            <label for="cep">CEP:</label><br>
+            <input type="text" id="cep" name="cep" required>
+        </div>
+    </fieldset>
+
+    <div>
+        <label for="tipoAcesso">Tipo de Acesso:</label><br>
+        <select id="tipoAcesso" name="tipoAcesso" required>
+            <option value="">Selecione</option>
+            <option value="usuario">Usuário</option>
+            <option value="admin_local">Administrador Local</option>
+            <option value="admin">Administrador</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="usuario">Usuário:</label><br>
+        <input type="text" id="usuario" name="usuario" required>
+    </div>
+
+    <div>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>

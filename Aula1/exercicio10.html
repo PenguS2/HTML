@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, section, footer {
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Luiz</h1>
+    <p>Desenvolvedor Web | Apaixonado por tecnologia</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <img src="" alt="Foto pessoal">
+    <p>Olá! Meu nome é Luiz, sou desenvolvedor web com experiência em HTML, CSS, JavaScript e atualmente estudando React. Amo criar soluções práticas e bonitas para a web.</p>
+</section>
+
+<section id="projetos">
+    <h2>Projetos</h2>
+
+    <article>
+        <h3>Site de Receitas</h3>
+        <img src="" alt="Projeto Site de Receitas">
+        <p>Projeto de site para amantes da culinária, com receitas organizadas por categorias.</p>
+    </article>
+
+    <article>
+        <h3>Blog de Viagens</h3>
+        <img src="" alt="Projeto Blog de Viagens">
+        <p>Um blog simples para compartilhar experiências de viagem, com design responsivo e otimização SEO.</p>
+    </article>
+
+    <article>
+        <h3>Portfólio Fotográfico</h3>
+        <img src="" alt="Projeto Portfólio Fotográfico">
+        <p>Um portfólio para fotógrafos exibirem seus melhores cliques, com galerias filtráveis e layout moderno.</p>
+    </article>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <form>
+        <input type="text" placeholder="Seu Nome" required>
+        <input type="email" placeholder="Seu E-mail" required>
+        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>Redes Sociais: 
+        <a href="#" style="color: white;">LinkedIn</a> | 
+        <a href="#" style="color: white;">GitHub</a> | 
+        <a href="#" style="color: white;">Instagram</a>
+    </p>
+    <p>&copy; 2025 Luiz. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
